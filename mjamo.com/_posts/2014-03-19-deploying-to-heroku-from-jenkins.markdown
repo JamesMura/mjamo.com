@@ -2,9 +2,9 @@
 layout: post
 title: "Deploying to heroku from Jenkins"
 date: 2014-03-19 11:54
-comments: false
+comments: true
 categories: Software
-published: true
+published: false
 tags: heroku,jenkins
 ---
 

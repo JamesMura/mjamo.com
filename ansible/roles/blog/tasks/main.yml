@@ -1,0 +1,6 @@
+- {synchronize: src=../mjamo.com/_site/ dest=/src/web/mjamo}
+- {template: src=nginx.conf.j2 dest=/etc/nginx/sites-available/mjamo.conf}
+- {file: src=/etc/nginx/sites-available/mjamo.conf dest=/etc/nginx/sites-enabled/mjamo.conf
+    state=link}
+- {file: path=/etc/nginx/sites-enabled/default state=absent}
+- {service: name=nginx state=restarted}
